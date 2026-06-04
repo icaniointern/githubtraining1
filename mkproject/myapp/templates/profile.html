@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h2>Hello, {{ name }}!</h2>
+  <p>Age: {{ age }}</p>
+
+  {% if age >= 18 %}
+    <p>You are an adult.</p>
+  {% else %}
+    <p>You are a minor.</p>
+  {% endif %}
+
+  <ul>
+    {% for skill in skills %}
+      <li>{{ skill }}</li>
+    {% endfor %}
+  </ul>
+
+</body>
+</html>

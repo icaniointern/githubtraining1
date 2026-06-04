@@ -1,0 +1,12 @@
+{% extends "Base.html"%} {# 👈 "I want to use base.html as my layout" #}
+
+{%block title%}My Homepage{% endblock %}
+{%block content%}
+<center>
+<h1> "Hi! welcome to my website" </h1>
+</center>
+<hr>
+<p>{% lorem 9 b random %}</p>
+<hr>
+{% endblock %}
+
